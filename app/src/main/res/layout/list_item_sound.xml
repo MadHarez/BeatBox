@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
@@ -9,17 +10,35 @@
             type="com.android.beatbox.SoundViewModel" />
     </data>
 
-    <FrameLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="8dp">
 
         <Button
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:onClick="@{() -> viewModel.onButtonClicked()}"
+            android:id="@+id/sound_button"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/button_beat_box"
+            android:backgroundTint="@null"
+            app:backgroundTint="@null"
+            android:foreground="@null"
+            android:stateListAnimator="@null"
+            android:clickable="true"
+            android:focusable="true"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:padding="8dp"
             android:text="@{viewModel.title}"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:onClick="@{() -> viewModel.onButtonClicked()}"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
             tools:text="Sound name" />
-    </FrameLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
