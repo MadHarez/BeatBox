@@ -1,4 +1,4 @@
-package com.android.beatbox
+package top.potmot.beatbox
 
 import android.content.res.AssetFileDescriptor
 import android.content.res.AssetManager

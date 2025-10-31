@@ -1,4 +1,4 @@
-package com.android.beatbox
+package top.potmot.beatbox
 
 import android.os.Bundle
 import android.view.ViewGroup
@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.android.beatbox.R
 import com.android.beatbox.databinding.ActivityMainBinding
 import com.android.beatbox.databinding.ListItemSoundBinding
 

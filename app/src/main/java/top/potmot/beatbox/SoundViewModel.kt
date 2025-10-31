@@ -1,4 +1,4 @@
-package com.android.beatbox
+package top.potmot.beatbox
 
 import androidx.databinding.BaseObservable
 import androidx.databinding.Bindable

@@ -1,4 +1,4 @@
-package com.android.beatbox
+package top.potmot.beatbox
 
 private const val WAV = ".wav"
 
